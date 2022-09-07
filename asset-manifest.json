@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FluffyTimer/static/css/main.e7be1c3c.css",
+    "main.js": "/FluffyTimer/static/js/main.943e214f.js",
+    "index.html": "/FluffyTimer/index.html",
+    "main.e7be1c3c.css.map": "/FluffyTimer/static/css/main.e7be1c3c.css.map",
+    "main.943e214f.js.map": "/FluffyTimer/static/js/main.943e214f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7be1c3c.css",
+    "static/js/main.943e214f.js"
+  ]
+}
