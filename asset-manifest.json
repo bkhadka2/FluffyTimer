@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/FluffyTimer/static/css/main.e7be1c3c.css",
-    "main.js": "/FluffyTimer/static/js/main.943e214f.js",
+    "main.css": "/FluffyTimer/static/css/main.a15c3032.css",
+    "main.js": "/FluffyTimer/static/js/main.00beeef6.js",
     "index.html": "/FluffyTimer/index.html",
-    "main.e7be1c3c.css.map": "/FluffyTimer/static/css/main.e7be1c3c.css.map",
-    "main.943e214f.js.map": "/FluffyTimer/static/js/main.943e214f.js.map"
+    "main.a15c3032.css.map": "/FluffyTimer/static/css/main.a15c3032.css.map",
+    "main.00beeef6.js.map": "/FluffyTimer/static/js/main.00beeef6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7be1c3c.css",
-    "static/js/main.943e214f.js"
+    "static/css/main.a15c3032.css",
+    "static/js/main.00beeef6.js"
   ]
 }
