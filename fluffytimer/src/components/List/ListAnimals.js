@@ -1,15 +1,20 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import classes from "./ListAnimals.module.css";
 
 const ListAnimals = (props) => {
   const [time, setTime] = useState("00:00");
+  const [status, setStatus] = useState(false);
 
   let minute = useRef(null);
   const onSetHandler = () => {
     console.log(minute.current.value);
     if (minute.current.value === "") {
       setTime("00:00");
+      setStatus(false);
       return;
+    }
+    else {
+      setStatus(true);
     }
     let totalHour = parseInt(props.hour);
     let totalMinute = parseInt(props.minute) + parseInt(minute.current.value);
@@ -25,7 +30,7 @@ const ListAnimals = (props) => {
   };
   return (
     <>
-      <div className={classes.cardSuccess}>
+      <div className={`${status ? classes.cardTaken : classes.cardSuccess}`}>
         <div className={classes.animals}>{props.animal}</div>
         <h1>{props.checkOut}</h1>
         <input
