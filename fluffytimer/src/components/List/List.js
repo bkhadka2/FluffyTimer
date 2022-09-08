@@ -1,4 +1,3 @@
-import "./List.module.css";
 import ListAnimals from "./ListAnimals";
 import { useEffect, useState } from "react";
 
