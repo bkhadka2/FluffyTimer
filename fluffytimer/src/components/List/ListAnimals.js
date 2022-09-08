@@ -18,12 +18,19 @@ const ListAnimals = (props) => {
     }
     let totalHour = parseInt(props.hour);
     let totalMinute = parseInt(props.minute) + parseInt(minute.current.value);
-    if (props.hour > 12) {
-      totalHour = props.hour - 12;
+    if (totalMinute >= 120) {
+      totalHour += 2;
+      totalMinute = Math.abs(totalMinute - 120);
     }
     if (totalMinute >= 60) {
       totalHour += 1;
       totalMinute = Math.abs(totalMinute - 60);
+    }
+    if (totalHour > 12) {
+      totalHour = totalHour - 12;
+    }
+    if (props.hour > 12) {
+      totalHour = props.hour - 12;
     }
     setTime(totalHour + ":" + totalMinute);
     minute.current.value = "";
